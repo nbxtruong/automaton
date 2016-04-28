@@ -1,6 +1,6 @@
-package main;
+package automata.run;
 
-import draw.GraphFrame;
+import automata.create.GraphFrame;
 
 public class Main {
 

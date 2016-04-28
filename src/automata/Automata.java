@@ -7,19 +7,19 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.Vector;
 
-import shape.Edge;
-import shape.EdgeLabel;
-import shape.InitState;
-import shape.JoinPoint;
-import shape.Shape;
-import shape.TerminalState;
 import automata.automaton.State;
 import automata.automaton.StateImpl;
 import automata.automaton.Transition;
 import automata.automaton.TransitionImpl;
+import automata.create.GraphWithEditor;
+import automata.create.LabelStatusMessage;
 import automata.observable.ObservableAutomaton;
-import draw.GraphWithEditor;
-import draw.LabelStatusMessage;
+import automata.shape.Edge;
+import automata.shape.EdgeLabel;
+import automata.shape.InitState;
+import automata.shape.JoinPoint;
+import automata.shape.Shape;
+import automata.shape.TerminalState;
 
 public class Automata {
 	/**

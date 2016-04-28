@@ -1,4 +1,4 @@
-package draw;
+package automata.create;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -15,12 +15,12 @@ import java.util.Vector;
 import javax.swing.JComponent;
 import javax.swing.event.MouseInputListener;
 
-import shape.Edge;
-import shape.EdgeLabel;
-import shape.JoinPoint;
-import shape.Shape;
-import shape.ShapeFactory;
 import automata.Automata;
+import automata.shape.Edge;
+import automata.shape.EdgeLabel;
+import automata.shape.JoinPoint;
+import automata.shape.Shape;
+import automata.shape.ShapeFactory;
 
 public class GraphWithEditor extends JComponent implements MouseInputListener,
 		Graph, KeyListener {

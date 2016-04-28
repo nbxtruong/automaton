@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!-- saved from url=(0075)http://dept-info.labri.fr/~baudon/Master/AO/Vietnam16/TD/Graphs/graphs.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<!--Converted with jLaTeX2HTML 2002-2-1 (1.70) JA patch-2.0
+patched version by:  Kenshi Muto, Debian Project.
+* modified by:  Shige TAKENO
+LaTeX2HTML 2002-2-1 (1.70),
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+  <title>Graph Editor</title>
+  <meta name="keywords" content="courbes">
+  <meta name="resource-type" content="document">
+  <meta name="distribution" content="global">
+  
+  <meta name="Generator" content="jLaTeX2HTML v2002-2-1 JA patch-2.0">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <link rel="STYLESHEET" href="./Graph Editor_files/courbes.css">
+</head>
+<body>
+<h1 style="text-align: center;">Graph Editor<span style="font-weight: bold;"></span></h1>
+<i>This subject is dedicated to the development of a graph editor. The
+project will consist of using this editor and the 2nd training lesson
+on automata to built an automata editor.</i>
+<p></p>
+<h4><span style="font-weight: bold;">Part 1<br>
+</span></h4>
+<p></p>
+<h1></h1>
+During this first part, you will realize a graphical component allowing
+to create circles and move them.<br>
+<div style="text-align: center;">
+<div style="text-align: left;">The graphical components used in this
+part are a JFrame containing a JComponent.<br>
+<br>
+Here are the steps to follow :<br>
+<ol>
+  <li>Create a class GraphFrame extending JFrame and a class
+GraphComponent extending JComponent. A GraphFrame
+will contain a GraphComponent. Instances of GraphComponent will have a
+default size of 500x500.</li>
+  <li>Make instances of GraphComponent also instances of
+MouseInputListener. Trace on the standard output the listening of the
+mouse events on a GraphComponent.<br>
+  </li>
+  <li>Draw in the GraphComponent a plain circle with radius 5 and
+modify the management of the events in such a way that, each time you
+click inside the circle, the word "win" is written on the standard
+output.</li>
+  <li>Modify the management of the events in such a way that, if the
+circle does not yet exist, it is created when you pressed the button of
+the mouse, and moved if you drag before releasing the button.<br>
+  </li>
+  <li>Manage the existence of more than one circle.</li>
+</ol>
+<h4><span style="font-weight: bold;">Part 2</span>&nbsp;</h4>
+<h4><span style="font-weight: bold;"></span></h4>
+<ol>
+  <li>Write a new version of GraphComponent using the <a href="http://java.sun.com/docs/books/tutorial/2d/index.html">API Java2D</a>.
+You will use instances of <a href="http://java.sun.com/javase/6/docs/api/java/awt/geom/Ellipse2D.html">Ellipse2D</a>
+for the circles.</li>
+  <li>Add scrollbars to the GraphComponent.</li>
+  <li>Add a menu allowing to open and close new windows, and quit the
+program. Use a dialog to confirm before quit.</li>
+  <li>Add a toolbar on the left side. Put in the toolbar buttons
+allowing to create different shapes : circle, square ... Use a <a href="http://java.sun.com/javase/6/docs/api/java/awt/GridLayout.html">GridLayout</a>
+to organize buttons in the toolbar.</li>
+</ol>
+<h4><span style="font-weight: bold;">Part 3<br>
+</span></h4>
+<ol>
+  <li>How to add easily new shapes like "small square", "big circle"
+... ?</li>
+  <li>Modify the management of the events in such a way that, if the
+key "alt" is down when you press the mouse button, an edge (line
+segment) is added between the two shapes. If there is no shape at the
+point where you release the button, a new shape will be added.</li>
+  <li>Modify the management of the events in such a way that, if you
+push the space bar during the creation of an edge, it will add a joint
+point. Joint points will be showed as small red circles that you may
+move.</li>
+</ol>
+<span style="font-weight: bold;">Part 4<br>
+</span>
+<ol>
+  <li>Use the right button to delete elements: shapes, edges, joint
+point.</li>
+  <li>Label the vertices (shapes) with numbers. <br>
+  </li>
+  <li>Add labels and arrows to edges. <br>
+  </li>
+</ol>
+</div>
+<h2>Project</h2>
+</div>
+<p></p>
+<h1>
+</h1>
+<p>During the project, you will have to :</p>
+<p></p>
+<ul>
+  <li>use the graph editor to create an automaton. You will also use
+the training lesson on automata ;<br>
+  </li>
+  <li>save automata into files and load them. You will use in
+particular the component JFileChooser ;<br>
+  </li>
+  <li>visualize the acknowledgment of a word in the editor.</li>
+</ul>
+<p>The starting point will be the correction of the training lessons.
+The project must be an extension of it. Then, please modify as less as
+possible the existing code. Any change must be clearly justified.<br>
+</p>
+<p>You may also improve the quality of the editor : use colors, change
+type of line for the edges, forbid multi-edges or loops whithout joint
+point... Nethertheless, the mark will be based more on the quality than
+the quantity of the code.<br>
+</p>
+<p><span style="font-weight: bold;">Criteria for the evaluation
+</span>:
+</p>
+<ul>
+  <li>Quality of the code, object aspects. </li>
+  <li>Robustness : protection against user's error during the
+execution. </li>
+  <li>Ergonomics of the user interface. Clearness of the visualization
+of informations. </li>
+  <li>Initiative and originality (it is annoying to see all the time
+clones of the same program !) </li>
+</ul>
+<p>
+</p>
+
+
+</body></html>

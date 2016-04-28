@@ -1,4 +1,4 @@
-package file;
+package automata.io;
 
 import java.awt.Component;
 import java.io.File;

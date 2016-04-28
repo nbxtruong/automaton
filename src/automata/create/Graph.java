@@ -1,11 +1,11 @@
-package draw;
+package automata.create;
 
 import java.awt.Color;
 import java.awt.Component;
 import java.util.Vector;
 
-import shape.Shape;
 import automata.Automata;
+import automata.shape.Shape;
 
 public interface Graph {
 	Component getComponent();

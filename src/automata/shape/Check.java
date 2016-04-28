@@ -1,4 +1,4 @@
-package shape;
+package automata.shape;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

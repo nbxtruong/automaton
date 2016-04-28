@@ -1,9 +1,9 @@
-package draw;
+package automata.create;
 
 import java.awt.Component;
 import java.util.Vector;
 
-import shape.Shape;
+import automata.shape.Shape;
 
 public abstract class GraphDecorator implements Graph {
 

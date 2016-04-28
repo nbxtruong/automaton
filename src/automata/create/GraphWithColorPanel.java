@@ -1,4 +1,4 @@
-package draw;
+package automata.create;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -20,9 +20,9 @@ import javax.swing.JButton;
 import javax.swing.JTextField;
 import javax.swing.JToolBar;
 
-import shape.Shape;
-import shape.ShapeFactory;
 import automata.Automata;
+import automata.shape.Shape;
+import automata.shape.ShapeFactory;
 
 public class GraphWithColorPanel extends GraphDecorator {
 	private JToolBar toolbox;

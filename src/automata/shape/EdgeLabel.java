@@ -1,4 +1,4 @@
-package shape;
+package automata.shape;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.event.MouseInputListener;
 
-import draw.GraphWithEditor;
+import automata.create.GraphWithEditor;
 
 public class EdgeLabel extends JLabel implements Shape, MouseInputListener,
 		Serializable {

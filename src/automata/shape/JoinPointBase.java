@@ -1,4 +1,4 @@
-package shape;
+package automata.shape;
 
 import java.io.Serializable;
 

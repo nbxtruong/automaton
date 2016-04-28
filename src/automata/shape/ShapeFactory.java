@@ -1,4 +1,4 @@
-package shape;
+package automata.shape;
 
 public class ShapeFactory {
 	public static final int CIRCLE = 0;

@@ -1,4 +1,4 @@
-package shape;
+package automata.shape;
 
 public class SmallSquare extends Square {
 

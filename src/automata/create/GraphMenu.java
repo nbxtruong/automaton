@@ -1,4 +1,4 @@
-package draw;
+package automata.create;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowEvent;
@@ -11,8 +11,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import shape.Shape;
-import file.FileUtils;
+import automata.io.FileUtils;
+import automata.shape.Shape;
 
 public class GraphMenu extends JMenuBar {
 
@@ -26,7 +26,7 @@ public class GraphMenu extends JMenuBar {
 		fileUtils = new FileUtils<Vector<Shape>>();
 		JMenu menu = new JMenu("File");
 		JMenuItem menuItem = new JMenuItem(new AbstractAction(
-				"Create new window") {
+				"New window") {
 			/**
 			 * Action perform when click create new windows
 			 */
@@ -39,7 +39,7 @@ public class GraphMenu extends JMenuBar {
 		});
 
 		JMenuItem menuItem2 = new JMenuItem(new AbstractAction(
-				"Close this window") {
+				"Close window") {
 
 			/**
 			 * 
@@ -52,7 +52,7 @@ public class GraphMenu extends JMenuBar {
 			}
 		});
 		JMenuItem menuItem3 = new JMenuItem(new AbstractAction(
-				"Quit the program") {
+				"Exit") {
 
 			/**
 			 * 
@@ -67,7 +67,7 @@ public class GraphMenu extends JMenuBar {
 		});
 
 		JMenuItem menuItem4 = new JMenuItem(
-				new AbstractAction("Export to file") {
+				new AbstractAction("Export") {
 
 					/**
 			 * 
@@ -86,7 +86,7 @@ public class GraphMenu extends JMenuBar {
 				});
 
 		JMenuItem menuItem5 = new JMenuItem(new AbstractAction(
-				"Import from file") {
+				"Import") {
 
 			/**
 			 * 
